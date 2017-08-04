@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <section class="buttonform">
+       <button class ="button is-large is-info" id="loginBtn" type="submit">Login</button>
+       <button class ="button is-large is-info" id="registerBtn" type="submit">Registration</button>
+    </section>
+
+        <div class="loginform" style="display: none;">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="usernamelog">Username</label></td>
+                        <td><input type="text" id="usernamelog"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="passwordlog">Password</label></td>
+                        <td><input type="passwordlog" id="passwordlog"/></td>                  
+                    </tr>
+                </tbody>
+            </table>
+            <button class ="button is-large is-info" id="loginFormBtn" type="submit">Login</button>
+        </div>
+
+        <div class="registerform" style="display: none;">
+            <div class="validateRegister" style="color:red;"></div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="username">Username</label></td>
+                        <td><input type="text" id="username" style="border-color:blue;"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" id="password" style="border-color:blue;"/></td>                  
+                    </tr>
+                    <tr>
+                        <td><label for="telefon">Telefon</label></td>
+                        <td><input type="text" id="telefon" style="border-color:blue;"/></td>                  
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Mail</label></td>
+                        <td><input type="text" id="mail" style="border-color:blue;"/></td>                  
+                    </tr>
+                </tbody>
+            </table>
+            <button class ="button is-large is-info" id="registerFormBtn" type="submit">Register</button>
+        </div>
+<script  src="./src/class.js" defer></script>
+</body>
+</html>
