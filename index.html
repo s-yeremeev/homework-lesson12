@@ -6,54 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css" rel="stylesheet">
     <title>Login</title>
+      <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <section class="buttonform">
-       <button class ="button is-large is-info" id="loginBtn" type="submit">Login</button>
-       <button class ="button is-large is-info" id="registerBtn" type="submit">Registration</button>
+        <button type="button" class="button buttonBlue" id="loginBtn">Login
+            <div class="ripples buttonRipples"><span class="registerBtn"></span></div>
+        </button>
+        <button type="button" class="button buttonBlue" id="registerBtn">Registration
+            <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+        </button>
     </section>
-    <div class="validateRegister" style="color:red;"></div>
+<div class="corectlogin" style="display: none;">
+    <h1 class="title is-1" style="color:red;">Hello my Friend !!! </h1>
+</div>
 
-        <div class="loginform" style="display: none;">
-            <table>
-                <tbody>
-                    <tr>
-                        <td><label for="usernamelog">Username</label></td>
-                        <td><input type="text" id="usernamelog"/></td>
-                    </tr>
-                    <tr>
-                        <td><label for="passwordlog">Password</label></td>
-                        <td><input type="passwordlog" id="passwordlog"/></td>                  
-                    </tr>
-                </tbody>
-            </table>
-            <button class ="button is-large is-info" id="loginFormBtn" type="submit">Login</button>
+<form class="formall" style="display: none;">
+    <div class="registerFields" style="display: none;">
+    <div class="group">
+        <div class="validateUser" style="color:red;"></div>
+        <input type="text" id="username" style="border-color:blue;"><span class="highlight"></span><span class="bar"></span>
+        <label>Username</label>
+    </div>
+
+    <div class="group">
+        <div class="validatePassword" style="color:red;"></div>
+        <input type="password"id="password" style="border-color:blue;"><span class="highlight"></span><span class="bar"></span>
+        <label for="password">Password</label>
+    </div>
+
+        <div class="group">
+            <div class="validateTelefon" style="color:red;"></div>
+            <input type="text"id="telefon" style="border-color:blue;"><span class="highlight"></span><span class="bar"></span>
+            <label for="telefon">Telefon</label>
         </div>
 
-        <div class="registerform" style="display: none;">
-            <table>
-                <tbody>
-                    <tr>
-                        <td><label for="username">Username</label></td>
-                        <td><input type="text" id="username" style="border-color:blue;"/></td>
-                    </tr>
-                    <tr>
-                        <td><label for="password">Password</label></td>
-                        <td><input type="password" id="password" style="border-color:blue;" /></td>                  
-                    </tr>
-                    <tr>
-                        <td><label for="telefon">Telefon</label></td>
-                        <td><input type="text" id="telefon" style="border-color:blue;"/></td>                  
-                    </tr>
-                    <tr>
-                        <td><label for="mail">Mail</label></td>
-                        <td><input type="text" id="mail" style="border-color:blue;"/></td>                  
-                    </tr>
-                </tbody>
-            </table>
-            <button class ="button is-large is-info" id="registerFormBtn" type="submit">Register</button>
+        <div class="group">
+            <div class="validateEmail" style="color:red;"></div>
+            <input type="email"id="mail" style="border-color:blue;"><span class="highlight"></span><span class="bar"></span>
+            <label for="mail">Email</label>
         </div>
+        <button type="button" class="button buttonBlue" id="goBtn">Register
+             <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+    </button>
+    </div>
+
+    
+    <div class="loginFields" style="display: none;">
+            <div class="group">
+            <div class="validateUserLogin" style="color:red;"></div>
+            <input type="text" id="usernamelogin" style="border-color:blue;"><span class="highlight"></span><span class="bar"></span>
+            <label>Username</label>
+        </div>
+
+        <div class="group">
+            <div class="validatePasswordLogin" style="color:red;"></div>
+            <input type="password" id="passwordlogin" style="border-color:blue;"><span class="highlight"></span><span class="bar"></span>
+            <label for="password">Password</label>
+        </div>
+            <button type="button" class="button buttonBlue" id="goLogin">Login
+                <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+        </button>
+    </div>
+    <button type="button" class="button buttonBlue" id="backBtn">Back
+        <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+    </button>
+</form>
 <script  src="./src/const.js" defer></script>
 <script  src="./src/class.js" defer></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="src/index.js"></script>
 </body>
 </html>
